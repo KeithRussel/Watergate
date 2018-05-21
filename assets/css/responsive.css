@@ -1,0 +1,430 @@
+/*// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+
+
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	span.btn-submenu .fa-angle-down:before {
+		display: none;
+	}
+
+	/*.wg-nav li ul.dropdown-menu {
+		margin-top: 9px!important;
+	}*/
+}
+
+/*Extra large desktops like MAC 1400px plus*/
+@media (min-width: 1400px) {}
+
+
+
+/*Custom Responsive*/
+@media (max-width: 425px) {
+
+	/*HEADER WHITECURVE*/
+	header>.whiteCurve {
+		margin-top: -2px;
+		height: 130px;
+	}
+
+	/*MAIN NAVIGATION*/
+	nav.main-nav {
+		padding: 10px 15px;
+		margin-top: -65px;
+	}
+
+	.navbar-toggler {
+		padding: 5px!important;
+		background-color: transparent;
+		border-color: #fff;
+	}
+
+	nav .navbar-brand {
+		top: -65px;
+	}
+
+	.wg-nav li:nth-child(4) {
+		margin-right: 0;
+	}
+
+	nav .navbar-collapse {
+		margin-top: 20px;
+	}
+
+	/*SLIDER CAROUSEL*/
+	#carouselControl1 {
+		top: 0;
+	}
+
+	/*BOOK SECTION*/
+	#book {
+		margin-top: 0;
+	}
+
+	/*WELCOME SECTION*/
+	#welcome {
+		padding: 45px 0 70px;
+	}
+
+	#welcome .detail>.title>span {
+		font-size: 40px;
+	}
+
+	/*SERVICES SECTION*/
+	#services {
+		padding: 50px 0;
+	}
+
+	#servicesIndicators .carousel-inner .carousel-item {
+		margin-top: 0;
+	}
+
+	.carousel-item #serviceId {
+		display: initial!important;
+	}
+
+	.serv-wrap img {
+		margin: 0;
+	}
+
+	.serv-arrows .carousel-control-prev {
+		left: 0;
+	}
+
+	.serv-wrap .vertical-text p {
+		 position: initial;
+	    font-size: 36px;
+	     width: auto; 
+	    right: -0;
+	    bottom: 0;
+	    -webkit-transform: rotate(0deg); 
+	    -moz-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	}
+
+	/*UPCOMING EVENTS SECTION*/
+	.post-style-one.rigth-image .inner-box .content-box:after,
+	.post-style-one.top-image .inner-box .content-box:after,
+	.post-style-one.left-image .inner-box .content-box:after {
+	    display: none;
+	}
+
+	.post-style-one .inner-box .content-box {
+		padding: 30px 30px 35px;
+	}
+
+	/*FOOTER*/
+
+	.top-footer {
+		padding: 15px 0 15px;
+	}
+
+	.left-footer .location {
+		margin-left: 15px;
+	}
+
+	.copyright p {
+		margin: 0 15px;
+	}
+
+
+	/*#################
+	### ROOM PAGE ###
+	#################*/
+	.room-indicators .mob-col {
+		width: 33.33%;
+	}
+
+  /*##########################
+	## CUSTOM PAGE TEMPLATE ##
+	##########################*/
+
+	.first-content, .second-content {
+		display: initial;
+	}
+
+	.first-content .text, .second-content .text {
+		margin-top: 25px;
+	}
+
+	.first-content img, .second-content img {
+		box-shadow: none;
+	}
+
+	.menu-footer ul {
+		padding: 0;
+	}
+
+	.staah-style {
+		width: 100%;
+	}
+
+	/*######################
+	### FOOTER SUBSCRIBE ###
+	#######################*/
+	.inner-subs .input-group input {
+		padding: 15px;
+	}
+
+	/*####################
+	### DEFAULT PAGE ###
+	####################*/
+	/*.entry-content img {
+    	width: 100%;
+    	height: auto;
+	}*/
+
+}
+
+@media (max-width: 736px) and (min-width: 667px) {
+	button.navbar-toggler {
+		position: absolute;
+	    right: 0px;
+	    top: -35px;
+	    margin-right: 15px;
+	}
+
+	nav .navbar-brand {
+		top: -75px;
+	}
+
+	nav.main-nav {
+		margin-top: -50px;
+	}
+
+	.dual-collapse2:nth-child(1) {
+		margin-top: 45px;
+	}
+
+	/*#######################
+	## Amenities Slider ###
+	#######################*/
+	#serviceId .mr-auto img {
+		width: 100%!important;
+		object-fit: cover;
+	}
+
+	.serv-arrows .carousel-control-next {
+		right: 0%;
+	}
+
+	.serv-arrows .carousel-control-prev {
+		left: 75%;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+	.logo-brand .navbar-toggler {
+		position: absolute;
+	    right: 0px;
+	    margin-right: 15px;
+	}
+
+	.dual-collapse2:nth-child(1) {
+		margin-top: 65px;
+	}
+
+	/*##############
+	 ## Carousel ##
+	##############*/
+
+	.carousel-caption h3 {
+		font-size: 36px;
+		margin-bottom: 0;
+	}
+
+	.carousel-caption p {
+		margin-bottom: 0;
+	}
+
+	/*##############
+	## SERVICES ##
+	##############*/
+
+	.serv-wrap img {
+		height: 300px;
+		width: auto!important;
+		margin: 0;
+	}
+
+	.serv-wrap .vertical-text p {
+		right: -90px;
+	}
+
+	.serv-arrows .carousel-control-prev {
+		top: 35%;
+		/*left: 82%;*/
+	}
+
+	.serv-arrows .carousel-control-next {
+		top: 35%;
+		/*right: -3%*/
+	}
+
+
+	/*#####################
+	## UPCOMING EVENTS ##
+	#####################*/
+	.post-style-one .inner-box .content-box .title {
+		font-size: 20px;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	/*################
+	### CAROUSEL ###
+	################*/
+	.full-banner {
+		height: 460px!important;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+/*	#############
+	## Booking ##
+	#############*/
+	.booking input {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 812px) and (min-width: 767px) {
+	button.navbar-toggler {
+		position: absolute;
+	    right: 0px;
+	    top: -35px;
+	    margin-right: 15px;
+	}
+
+	.main-nav .navbar-collapse {
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 991px) {
+	.serv-wrap img {
+		margin-top: -45px;
+	}
+
+	.dual-collapse2:nth-child(1) {
+		margin-top: 50px;
+	}
+
+	button.navbar-toggler {
+		position: absolute;
+	    right: 0px;
+	    top: 20px;
+	    margin-right: 15px;
+	}	
+}
+
+@media (max-width: 1024px) {
+
+	.post-style-one .inner-box .content-box .title {
+		font-size: 18px;
+	}
+
+	.post-style-one .inner-box .content-box .date {
+		font-size: 28px;
+	}
+
+	.top-info, .first-content, .second-content {
+		margin: 0 0 50px;
+	}
+
+	.no-gutters .first-content, .no-gutters .second-content {
+		padding: 15px 0;
+	}
+
+	.first-content .image img, .second-content .image img  {
+		box-shadow: none;
+	}
+
+	/*##########################
+	## CUSTOM PAGE TEMPLATE ##
+	##########################*/
+	.first-content .image, .second-content .image {
+		padding-left: 15px;
+	}
+
+	.wg-nav li .dropdown-toggle::after {
+    	float: right;
+	}
+
+	.archive-watergate .card-body:after {
+		display: none;
+	}
+
+	.alignnone { width: 100%; }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+	nav.main-nav {
+		margin-top: -50px;
+	}
+
+	nav .navbar-brand {
+		top: -75px;
+	}
+
+	button.navbar-toggler {
+		top: -35px;
+	}
+
+	/*################
+	### CAROUSEL ###
+	################*/
+	.carousel-item .carousel-caption {
+		bottom: 215px;
+	}
+
+	.full-banner {
+    	height: 570px!important;
+	}
+
+
+	.post-style-one .inner-box .content-box {
+		padding: 20px 20px 20px;
+	}
+
+	.serv-wrap .vertical-text p {
+		font-size: 32px;
+		right: -95px;
+		line-height: 30px;
+		bottom: 135px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.full-banner {
+		height: 700px!important;
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+
+

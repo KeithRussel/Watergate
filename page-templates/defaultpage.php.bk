@@ -1,0 +1,62 @@
+<?php
+/**
+ * Template Name: Default Watergate Page
+ *
+ * @description Template for displaying a Default custom page.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ * @package		watergate
+ * @subpackage	page-templates/defaultwatergatepage
+ * @version		1.0.0
+ * @author		Keith Russel
+ */
+
+get_header();
+?>
+
+<header class="entry-header">
+<?php 
+	$bannerImage1 = get_field('amenities_banner', 'option');
+	$bannerImage2 = get_field('shops_banner', 'option');
+	$bannerImage3 = get_field('services_banner', 'option');
+	$bannerImage4 = get_field('packages_banner', 'option');
+	$defBan = 'http://via.placeholder.com/1300x620';
+	$bannerImage1 = $bannerImage1['sizes']['banner'];
+	$bannerImage2 = $bannerImage2['sizes']['banner'];
+	$bannerImage3 = $bannerImage3['sizes']['banner'];
+	$bannerImage4 = $bannerImage4['sizes']['banner'];
+if ( is_page( 21 )) { ?>
+	<div class="main_banner" style="background-image: url(<?php if( !empty($bannerImage1)){ echo $bannerImage1; } else { echo $defBan; } ?>);" alt="Amenities Banner"></div>
+<?php } else if( is_page(23)) { ?>
+	<div class="main_banner" style="background-image: url(<?php if( !empty($bannerImage2)){ echo $bannerImage2; } else { echo $defBan; } ?>);" alt="Shops Banner"></div>
+<?php } else if( is_page(181)) { ?>
+	<div class="main_banner" style="background-image: url(<?php if( !empty($bannerImage3)){ echo $bannerImage3; } else { echo $defBan; } ?>);" alt="Services Banner">
+<?php } else if( is_page(323)) { ?>
+	<div class="main_banner" style="background-image: url(<?php if( !empty($bannerImage4)){ echo $bannerImage4; } else { echo $defBan; } ?>);" alt="Packages Banner">
+<?php } else { ?>
+	<div class="main_banner" style="background-image: url(<?php if( !empty($bannerImage4)){ echo $bannerImage4; } else { echo $defBan; } ?>);" alt="Packages Banner">
+<?php } ?>		
+</header><!-- .entry-header -->
+
+<section id="default-template">
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-md-12">
+			<?php
+			// TO SHOW THE PAGE CONTENTS
+			while ( have_posts() ) : the_post(); ?>
+				<h1><?php the_title(); ?></h1>
+				<?php the_content(); ?>
+				 <?php
+			endwhile; //resetting the page loop
+			wp_reset_query(); //resetting the page query
+			?>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+<?php get_footer();
